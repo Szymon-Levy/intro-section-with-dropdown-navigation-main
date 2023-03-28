@@ -3,37 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <header id="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/logo.svg" alt="">
+      </div>
 
-  Login
-  Register
+      <nav id="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <div class="nav-item-heading">
+              <a class="nav-link" href="#">Features</a>
+              <span class="menu-arrow"></span>
+            </div>
 
-  Make remote work
+            <ul class="nav-dropdown-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/icon-todo.svg" alt="">
+                  Todo List
+                </a>
+              </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/icon-calendar.svg" alt="">
+                  Calendar
+                </a>
+              </li>
 
-  Learn more
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/icon-reminders.svg" alt="">
+                  Reminders
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="images/icon-planning.svg" alt="">
+                  Planning
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-item-heading">
+              <a class="nav-link" href="#">Company</a>
+              <span class="menu-arrow"></span>
+            </div>
+
+            <ul class="nav-dropdown-list">
+              <li class="nav-item">
+                <a class="nav-link" href="#">History</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Our Team</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-item-heading">
+              <a class="nav-link" href="#">Careers</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-item-heading">
+              <a class="nav-link" href="#">About</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="user-buttons">
+          <button class="login-btn"><a href="#">Login</a></button>
+          <button class="register-btn"><a href="#">Register</a></button>
+        </div>
+
+        <div id="offcanvas-close">
+          <img src="images/icon-close-menu.svg" alt="">
+        </div>
+      </nav>
+
+      <div id="offcanvas-open">
+        <img src="images/icon-menu.svg" alt="">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="col image">
+          <picture>
+            <source srcset="images/image-hero-desktop.png" media="(min-width: 768px)" />
+            <img src="images/image-hero-mobile.png" alt="MDN" />
+          </picture>
+        </div>
+        <div class="col data">
+          <h1>Make remote work</h1>
+
+          <p>Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+
+          <button><a href="#">Learn more</a></button>
+
+          <div class="logos-wrapper">
+            <a href="#"><img src="images/client-databiz.svg" alt=""></a>
+
+            <a href="#"><img src="images/client-audiophile.svg" alt=""></a>
+
+            <a href="#"><img src="images/client-meet.svg" alt=""></a>
+
+            <a href="#"><img src="images/client-maker.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+
+
+
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  
+
+   -->
+  
+
+    <script src="script.js"></script>
+
 </body>
 </html>
